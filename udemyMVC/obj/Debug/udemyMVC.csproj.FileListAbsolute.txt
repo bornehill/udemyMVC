@@ -72,3 +72,7 @@ C:\sys\Projects\udemyMVC\udemyMVC\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\sys\Projects\udemyMVC\udemyMVC\obj\Debug\udemyMVC.csprojResolveAssemblyReference.cache
 C:\sys\Projects\udemyMVC\udemyMVC\obj\Debug\udemyMVC.dll
 C:\sys\Projects\udemyMVC\udemyMVC\obj\Debug\udemyMVC.pdb
+C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.dll
+C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.SqlServer.dll
+C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.xml
+C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.SqlServer.xml
