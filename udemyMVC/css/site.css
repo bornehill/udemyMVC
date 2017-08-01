@@ -6,3 +6,32 @@
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	font-size:12px;
 }
+.ui-widget-content .ui-icon {
+	background-image: url("../../images/ui-icons_8DC262_256x240.png");
+}
+
+.ui-widget-header .ui-icon {
+	background-image: url("../../images/ui-icons_8DC262_256x240.png");
+}
+
+.ui-state-default .ui-icon {
+	background-image: url("../../images/ui-icons_808080_256x240.png");
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: url("../../images/ui-icons_847e71_256x240.png");
+}
+
+.ui-state-active .ui-icon {
+	background-image: url("../../images/ui-icons_eeeeee_256x240.png");
+}
+
+.ui-state-highlight .ui-icon {
+	background-image: url("../../images/ui-icons_ffffff_256x240.png");
+}
+
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url("../../images/ui-icons_cd0a0a_256x240.png");
+}

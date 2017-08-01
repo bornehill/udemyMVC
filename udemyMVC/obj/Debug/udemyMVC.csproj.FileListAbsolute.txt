@@ -76,3 +76,5 @@ C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.dll
 C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.SqlServer.dll
 C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.xml
 C:\sys\Projects\udemyMVC\udemyMVC\bin\EntityFramework.SqlServer.xml
+C:\sys\Projects\udemyMVC\udemyMVC\obj\Debug\udemyMVC.Migrations.InitialCreate.resources
+C:\sys\Projects\udemyMVC\udemyMVC\obj\Debug\udemyMVC.csproj.GenerateResource.Cache

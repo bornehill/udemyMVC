@@ -1,19 +1,20 @@
-﻿@model IEnumerable<udemyMVC.Models.Contact>
+﻿@model IEnumerable<udemyMVC.Models.Seller>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Administración de vendedores";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table" id="tblContacts">
+<table class="table" id="tblSellers">
 	<thead>
 		<tr>
 			<th>@Html.DisplayNameFor(model => model.Name)</th>
 			<th>@Html.DisplayNameFor(model => model.LastName)</th>
+			<th>@Html.DisplayNameFor(model => model.Birthday)</th>
 			<th>@Html.DisplayNameFor(model => model.Street)</th>
 			<th>@Html.DisplayNameFor(model => model.NoInt)</th>
 			<th>@Html.DisplayNameFor(model => model.Urbanization)</th>
@@ -30,6 +31,7 @@
 		<tr>
 			<td>@Html.DisplayFor(modelItem => item.Name)</td>
 			<td>@Html.DisplayFor(modelItem => item.LastName)</td>
+			<td>@Html.DisplayFor(modelItem => item.Birthday)</td>
 			<td>@Html.DisplayFor(modelItem => item.Street)</td>
 			<td>@Html.DisplayFor(modelItem => item.NoInt)</td>
 			<td>@Html.DisplayFor(modelItem => item.Urbanization)</td>
@@ -38,19 +40,18 @@
 			<td>@Html.DisplayFor(modelItem => item.Country)</td>
 			<td>@Html.DisplayFor(modelItem => item.ZipCode)</td>
 			<td>
-				@Html.ActionLink("Edit", "Edit", new { id = item.ContactId }) |
-				@Html.ActionLink("Details", "Details", new { id = item.ContactId }) |
-				@Html.ActionLink("Delete", "Delete", new { id = item.ContactId })
+				@Html.ActionLink("Edit", "Edit", new { id = item.SellerId }) |
+				@Html.ActionLink("Details", "Details", new { id = item.SellerId }) |
+				@Html.ActionLink("Delete", "Delete", new { id = item.SellerId })
 			</td>
 		</tr>
 		}
 	</tbody>
 </table>
-
 @section Scripts{
 	<script type="text/javascript">
 		$(function () {
-			$("#tblContacts").DataTable({
+			$("#tblSellers").DataTable({
 				//"pagingType": "full_numbers",
 				"scrollY": "600px"
 				, "columnDefs": [
@@ -64,6 +65,7 @@
 					, { "width": "45px", "targets": 7 }
 					, { "width": "45px", "targets": 8 }
 					, { "width": "45px", "targets": 9 }
+					, { "width": "45px", "targets": 10 }
 				]
 				, "order": [[1, "desc"]]
 				, "dom": 'Rlfrtip'

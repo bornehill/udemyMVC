@@ -20,5 +20,7 @@ namespace udemyMVC.Models
         }
 
 		public System.Data.Entity.DbSet<udemyMVC.Models.Contact> Contacts { get; set; }
+
+		public System.Data.Entity.DbSet<udemyMVC.Models.Seller> Sellers { get; set; }
 	}
 }

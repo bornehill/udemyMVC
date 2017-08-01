@@ -15,14 +15,14 @@ namespace udemyMVC.Controllers
 
 		public ActionResult About()
 		{
-			ViewBag.Message = "Your application description page.";
+			ViewBag.Message = "Sosar web, tu sitio de prestamos personales .";
 
 			return View();
 		}
 
 		public ActionResult Contact()
 		{
-			ViewBag.Message = "Your contact page.";
+			ViewBag.Message = "Contactanos.";
 
 			return View();
 		}

@@ -149,10 +149,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SellersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707282204135_InitialCreate.cs" />
+    <Compile Include="Migrations\201707282204135_InitialCreate.Designer.cs">
+      <DependentUpon>201707282204135_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Seller.cs" />
     <Compile Include="Models\udemyMVCContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -162,6 +169,9 @@
     <Content Include="css\colReorder.bootstrap.min.css" />
     <Content Include="css\colReorder.dataTables.min.css" />
     <Content Include="css\dataTables.bootstrap.min.css" />
+    <Content Include="css\jquery-ui.min.css" />
+    <Content Include="css\jquery-ui.structure.min.css" />
+    <Content Include="css\jquery-ui.theme.min.css" />
     <Content Include="css\jquery.dataTables.min.css" />
     <Content Include="css\jquery.dataTables_themeroller.css" />
     <Content Include="css\site.css" />
@@ -177,9 +187,25 @@
     <Content Include="images\sort_both.png" />
     <Content Include="images\sort_desc.png" />
     <Content Include="images\sort_desc_disabled.png" />
+    <Content Include="images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="images\ui-icons_808080_256x240.png" />
+    <Content Include="images\ui-icons_847e71_256x240.png" />
+    <Content Include="images\ui-icons_8DC262_256x240.png" />
+    <Content Include="images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="images\ui-icons_ffffff_256x240.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\dataTables.bootstrap.min.js" />
     <Content Include="js\dataTables.colReorder.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
     <Content Include="js\jquery.dataTables.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="Web.config" />
@@ -229,6 +255,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Contacts\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sellers\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sellers\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sellers\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sellers\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Sellers\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707282204135_InitialCreate.resx">
+      <DependentUpon>201707282204135_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
